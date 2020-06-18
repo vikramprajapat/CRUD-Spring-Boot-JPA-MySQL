@@ -30,7 +30,7 @@ public class BookStoreController {
 		List<Book> books = service.getBooks();
 		return new ResponseEntity<List<Book>>(books, HttpStatus.OK);
 		
-	}
+	} 
 	
 	@GetMapping("books/{id}")
 	public ResponseEntity<Book> getBook(@PathVariable("id") Integer id){
